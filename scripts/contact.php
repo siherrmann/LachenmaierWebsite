@@ -2,7 +2,7 @@ if (isset($_POST['send']) && !empty($POST['send'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
   $nachricht = $_POST['nachricht'];
-  $secretkey = '6LcrcREUAAAAAB5x5A3_Cr1WbNNQeE_gimGqfQat';
+  $secretkey = '6LcKjHoUAAAAAMVyhwFE6OuLtXsGqCdEViFgyIma';
 
   $antwortJSON = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.       $secretkey.'&response='.$_POST['g-recaptcha-response']);
   $antwortDaten = json_decode($antwortJSON);
