@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Lachenmaier Werkzeugbau GmbH",
+    "short_name": "Lachenmaier",
     "icons": [
         {
             "src": "/android-chrome-144x144.png",
@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#e96656",
     "background_color": "#ffffff",
     "display": "standalone"
 }
