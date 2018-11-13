@@ -1,6 +1,7 @@
 {
     "name": "Lachenmaier Werkzeugbau GmbH",
     "short_name": "Lachenmaier",
+    "permissions": ["tabs", "history"],
     "icons": [
         {
             "src": "/android-chrome-144x144.png",
