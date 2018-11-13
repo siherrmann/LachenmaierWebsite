@@ -55,19 +55,19 @@
 }
 
 .scrollToContact {
-  background-color: #e96656;
+  background-color: #195757;
 }
 
 .scrollToServices {
-  background-color: #069059;
+  background-color: #c03221;
 }
 
 .scrollToContact:hover {
-  background-color: #ba5245;
+  background-color: #154848;
 }
 
 .scrollToServices:hover {
-  background-color: #057347;
+  background-color: #9e291c;
 }
 
 @media all and (max-width: 1300px) {

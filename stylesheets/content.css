@@ -130,19 +130,21 @@
   height: 78px;
   width: 304px;
   padding: 0px;
+  border: none;
 }
 
 .submit {
   float: right;
   margin-right: 10px;
-  background: #e96656;
+  background: #c03221;
   height: 45px;
   width: 304px;
   color: white;
+  border: none;
 }
 
 .submit:hover {
-  background: #ba5245;
+  background: #9e291c;
 }
 
 .contentMap {
