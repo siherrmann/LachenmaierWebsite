@@ -85,6 +85,7 @@
   display: inline-block;
 }
 
+.dotsBlack:hover,
 .dotsTransparent:hover {
   background-color: #666;
   transition: all 0.3s ease-in-out;
