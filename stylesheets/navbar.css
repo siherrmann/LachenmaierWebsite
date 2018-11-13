@@ -1,0 +1,65 @@
+.linkTo,
+.scrollToStart,
+.scrollToLocation,
+.scrollToImprint {
+  float: right;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 12px;
+  width: 180px;
+  border: none;
+}
+
+.linkTo,
+.scrollToLocation,
+.scrollToImprint {
+  background-color: white;
+  color: black;
+}
+
+.scrollToStart {
+  background-color: #e96656;
+  color: white;
+}
+
+.linkTo:hover,
+.scrollToLocation:hover,
+.scrollToImprint:hover {
+  background-color: #ccc;
+}
+
+.scrollToStart:hover {
+  background-color: #ba5245;
+}
+
+.frameLine {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lineBlack {
+  height: 1px;
+  width: 66%;
+  float: right;
+  background-color: #888;
+}
+
+@media all and (max-width: 620px) {
+  .linkTo,
+  .scrollToStart,
+  .scrollToLocation {
+    padding-right: 0px;
+    width: 100%;
+  }
+}

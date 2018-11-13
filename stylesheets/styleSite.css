@@ -1,0 +1,82 @@
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+
+body {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+form {
+  margin-bottom: 0px;
+}
+
+iframe {
+  border: none;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-weight: 200;
+}
+h3 {
+  color: black;
+}
+p {
+  font-family: "Abel", sans-serif;
+}
+a {
+  color: black;
+}
+
+.responsive {
+  height: 100%;
+  max-width: 500px;
+  width: auto;
+}
+
+.button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frameMulti {
+  flex-direction: row;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.frame {
+  display: block;
+}

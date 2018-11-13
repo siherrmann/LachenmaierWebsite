@@ -1,0 +1,171 @@
+<html>
+
+  <head>
+    <title> Lachenmaier Werkzeugbau GmbH </title>
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="private" />
+    <meta http-equiv="expires" content="1210000" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/navbar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/content.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script src="scripts/stickyNavbar.js" async></script>
+    <script src="scripts/scroll.js" async></script>
+    <script src="scripts/slide.js" async></script>
+  </head>
+
+  <body>
+
+    <div class="frame sticky" id="navbar">
+      <button class="scrollToLocation button" data-easing="easeInQuart" href="#location" onfocus="this.blur()">Anfahrt</button>
+      <button class="linkTo button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Impressum</button>
+      <button class="scrollToStart button" data-easing="easeInQuart" href=".header" onfocus="this.blur()">Startseite</button>
+      <div class="frameLine">
+        <div id="lineBlack"></div>
+      </div>
+    </div>
+
+
+    <div class="header">
+      <div class="headerPictureFrame">
+        <img src="graphics/Haus3.png" alt="Lachenmaier" class="headerPicture">
+      </div>
+      <div class="headerTextFrame">
+        <h1 class="headerText">Lachenmaier Werkzeugbau GmbH</h1>
+        <div class="headerButton frameMulti">
+          <button class="scrollToContact button" data-easing="easeInQuart" href="#contact" onfocus="this.blur()">Kontakt</button>
+          <button class="scrollToServices button" data-easing="easeInQuart" href="#services" onfocus="this.blur()">Leistungen</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="content">
+      <div class="contentInfo">
+        <h3>Herzlich Willkommen</h3>
+        <p>…auf der Website der Lachenmaier Werkzeugbau GmbH in Bietigheim, Ihrem Spezialisten für die Anfertigung von Spritzguss- und Blechverarbeitungswerkzeugen.</p>
+        <p>Unser hochmotiviertes Team aus drei Konstrukteuren und sechs Werkzeugmachern berät Sie bereits in der Entwicklungsphase und bei Bedarf liefern wir auch Muster- und Prototypenteile. Auf Termintreue und hohe Produktqualität können Sie bei uns zählen!</p>
+        <p>Mittlerweile wird das Unternehmen von der zweiten Generation mit geführt.</p>
+        <p>Seit der Firmengründung im Jahre 1985 fertigen wir für namhafte Kunden aus den Geschäftsbereichen:
+        <ul><li>Automobilindustrie</li>
+        <li>Systemlieferanten der Automobilindustrie</li>
+        <li>Elektroindustrie</li>
+        <li>Medizintechnik</li>
+        <li>Freizeit- und Unterhaltungsbranche</li></ul>
+        <p>Wir beraten unsere Kunden bereits in der Entwicklungsphase und liefern bei Bedarf Muster- und Prototypenteile.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="contentSlide">
+        <img class="slide" src="graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg" style="width:100%">
+        <img class="slide" src="graphics/fach-spritzgusswerkzeug-gr.jpg" style="width:100%">
+        <img class="slide" src="graphics/graphitelektrodenbearbeitung-gr.jpg" style="width:100%">
+        <div class="text">
+          <div class="left" onclick="nextPicture(-1)">&#10094;</div>
+          <div class="right" onclick="nextPicture(1)">&#10095;</div>
+          <span class="dotsTransparent dot" onclick="currentPicture(1)"></span>
+          <span class="dotsTransparent dot" onclick="currentPicture(2)"></span>
+          <span class="dotsTransparent dot" onclick="currentPicture(3)"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="content">
+      <div class="contentServices">
+        <h3>Unsere Leistungen</h3>
+        <p>Unser Leistungsspektrum umfasst:</p>
+        <ul><li>Teileentwicklung (fertigungstechnische Auslegung)</li>
+        <li>Herstellung von Musterteilen</li>
+        <li>Konstruktion und Bau von Prototypen, Vorserien und Serienwerkzeugen zur Herstellung von Kunststoff und Blechteilen  (max. Formgröße 1000x800)</li>
+        <li>Werkzeugwartung, Reparatur und Änderung</li>
+        <li>Vorrichtungs- und Lehrenbau</li>
+        <li>Dienstleistungen in allen vorhandenen Technologien</li>
+        <li>Konstruktion und Programmierung durchgängig mit CatiaV5 und Cimatron (Datenformate: VDA, IGES ,STEP ,DXF ,DWG ,SAT).</li></ul>
+        <p>Die dafür zur Verfügung stehenden Technologien:</p>
+        <ul><li>CNC Fräsen 3/5-Achs (auch Graphit)</li>
+        <li>CNC Senkerodieren</li>
+        <li>CNC Drahterodoeren</li>
+        <li>CNC Drehen</li>
+        <li>Flachschleifen</li>
+        <li>Startlocherodieren</li></ul>
+        <p>Für genauere Informationen und mögliche Umsetzung Ihres Auftrages dürfen Sie uns gerne kontaktieren.</p>
+      </div>
+    </div>
+
+    <div id="contact" class="content">
+      <form class="contentContact" method="post" action="scripts/contact.php">
+        <div class="frameMulti">
+          <input type="text" class="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value="">
+          <input type="text" class="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="">
+          <input type="text" class="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value="">
+        </div>
+        <textarea rows="5" cols="30" class="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
+        <div class="frame">
+          <div class="g-recaptcha" data-sitekey="6LcrcREUAAAAAPjbbvLl3ggtAwc-QDcHo2KubDyf"></div>
+        </div>
+        <div class="frame">
+          <button class="submit button" type="submit" name="send" onfocus="this.blur()">Absenden</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="location" class="content">
+      <div class="contentMap">
+        <iframe src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed scrolling="no" class="map">
+        </iframe>
+      </div>
+    </div>
+
+    <div id="lineBlack"></div>
+    <div id="lineWhite"></div>
+
+    <div class="footer">
+      <div class="footerPartFrame">
+        <img src="graphics/location.png" alt="Adresse" class="footerPicture">
+        <div class="footerText">
+          <p>Lachenmaier Werkzeugbau GmbH<br>
+          Obere Hardt 19<br>
+          76467 Bietigheim<br>
+          Mail: info@lachenmaier.org<br>
+          Homepage: www.lachenmaier.org</p>
+        </div>
+      </div>
+      <div class="footerPartFrame">
+        <img src="graphics/email.png" alt="Email" class="footerPicture">
+        <div class="footerText">
+          <p>Mail: info@lachenmaier.org</p>
+        </div>
+      </div>
+      <div class="footerPartFrame">
+        <img src="graphics/phone.png" alt="Telefon" class="footerPicture">
+        <div class="footerText">
+          <p>Fon 0 72 45 / 91 94 0<br>
+            Mobil 01 72 / 7 23 11 30<br>
+            Fax 0 72 45 / 91 94 15</p>
+
+          <p>DFÜ 0 72 45 / 91 94 16<br>
+            DFÜ 0 72 45 / 91 94 18</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerCopyright">
+      <p>© Lachenmaier Werkzeugbau GmbH<br>
+        Made with ♥ by <a href="https://github.com/siherrmann" style="color: white">siherrmann</a></p>
+    </div>
+
+  </body>
+</html>
