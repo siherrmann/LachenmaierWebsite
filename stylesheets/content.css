@@ -98,10 +98,10 @@
   background-color: white;
 }
 
-.name,
-.email,
-.subject,
-.message,
+#name,
+#email,
+#subject,
+#message,
 .submit,
 .g-recaptcha {
   padding: 10px;
@@ -114,14 +114,14 @@
   font-family: "Abel", sans-serif;
 }
 
-.email,
-.subject,
-.name {
+#email,
+#subject,
+#name {
   height: 45px;
   width: 30%;
 }
 
-.message {
+#message {
   max-width: 100%;
   height: 30%;
 }
@@ -158,20 +158,20 @@
 }
 
 @media all and (max-width: 1500px) {
-  .email,
-  .name {
+  #email,
+  #name {
     width: 46%;
   }
 
-  .subject {
+  #subject {
     width: 100%;
   }
 }
 
 @media all and (max-width: 1000px) {
-  .subject,
-  .email,
-  .name {
+  #subject,
+  #email,
+  #name {
     width: 100%;
   }
 }

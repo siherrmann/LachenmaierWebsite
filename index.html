@@ -3,8 +3,8 @@
   <head>
     <title> Lachenmaier Werkzeugbau GmbH </title>
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
@@ -37,7 +37,7 @@
 
     <div class="header">
       <div class="headerPictureFrame">
-        <img src="graphics/Haus3.png" alt="Lachenmaier" class="headerPicture">
+        <img src="graphics/Haus3.png" alt="lachenmaier-building" class="headerPicture">
       </div>
       <div class="headerTextFrame">
         <h1 class="headerText">Lachenmaier Werkzeugbau GmbH</h1>
@@ -68,9 +68,9 @@
 
     <div class="content">
       <div class="contentSlide">
-        <img class="slide" src="graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg" style="width:100%">
-        <img class="slide" src="graphics/fach-spritzgusswerkzeug-gr.jpg" style="width:100%">
-        <img class="slide" src="graphics/graphitelektrodenbearbeitung-gr.jpg" style="width:100%">
+        <img class="slide" alt="konstruktion-2fach-werkzeug-auswerferseite" src="graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg" style="width:100%">
+        <img class="slide" alt="fach-spritzgusswerkzeug" src="graphics/fach-spritzgusswerkzeug-gr.jpg" style="width:100%">
+        <img class="slide" alt="graphitelektrodenbearbeitung" src="graphics/graphitelektrodenbearbeitung-gr.jpg" style="width:100%">
         <div class="text">
           <div class="left" onclick="nextPicture(-1)">&#10094;</div>
           <div class="right" onclick="nextPicture(1)">&#10095;</div>
@@ -106,11 +106,11 @@
     <div id="contact" class="content">
       <form class="contentContact" method="post" action="scripts/contact.php">
         <div class="frameMulti">
-          <input type="text" class="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value="">
-          <input type="text" class="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="">
-          <input type="text" class="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value="">
+          <input type="text" id="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value="">
+          <input type="text" id="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="">
+          <input type="text" id="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value="">
         </div>
-        <textarea rows="5" cols="30" class="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
+        <textarea label="nachricht" rows="5" cols="30" id="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
         <div class="frame">
           <div class="g-recaptcha" data-sitekey="6LcrcREUAAAAAPjbbvLl3ggtAwc-QDcHo2KubDyf"></div>
         </div>
@@ -122,7 +122,7 @@
 
     <div id="location" class="content">
       <div class="contentMap">
-        <iframe src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed scrolling="no" class="map">
+        <iframe title="lachenmaierLocation" src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed scrolling="no" class="map">
         </iframe>
       </div>
     </div>
