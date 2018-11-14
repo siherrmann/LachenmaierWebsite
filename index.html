@@ -119,11 +119,11 @@
     <div id="contact" class="content">
       <form class="contentContact" method="post" action="scripts/contact.php">
         <div class="frameMulti">
-          <input type="text" id="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value="">
-          <input type="text" id="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="">
-          <input type="text" id="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value="">
+          <label class="nameLabel"><input type="text" id="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value=""></label>
+          <label class="emailLabel"><input type="text" id="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value=""></label>
+          <label class="subjectLabel"><input type="text" id="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value=""></label>
         </div>
-        <textarea rows="8" cols="30" id="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
+        <label class="messageLabel"><textarea rows="8" cols="30" id="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea></label>
         <div class="frame">
           <div class="g-recaptcha" data-sitekey="6LcKjHoUAAAAAEJ4Rpq3dAIeghxt14kewGdvac3C"></div>
         </div>
