@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Abel";
+  font-style: normal;
+  font-display: block;
+  font-weight: 400;
+  src: local("Abel Regular"), local("Abel-Regular"),
+    url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPQ.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
 #navbar {
   display: flex;
   justify-content: flex-end;
@@ -41,7 +54,6 @@ h3 {
 }
 p {
   font-family: "Abel", sans-serif;
-  font-display: swap;
 }
 a {
   color: black;
@@ -61,7 +73,6 @@ a {
   font-size: 20px;
   font-family: "Abel", sans-serif;
   font-weight: 400;
-  font-display: swap;
 }
 
 .frameMulti {
@@ -230,7 +241,6 @@ a {
   text-align: center;
   font-size: 50px;
   font-family: "Abel", sans-serif;
-  font-display: swap;
   color: black;
 }
 
@@ -301,7 +311,6 @@ a {
   padding: 50px 17%;
   font-size: 20px;
   font-family: "Abel", sans-serif;
-  font-display: swap;
 }
 
 .contentSite {
@@ -400,7 +409,6 @@ a {
   font-size: 20px;
   font-weight: 500;
   font-family: "Abel", sans-serif;
-  font-display: swap;
 }
 
 #email,
@@ -484,7 +492,6 @@ a {
     padding: 50px 2%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
-    font-display: swap;
   }
 
   .g-recaptcha,
@@ -507,7 +514,6 @@ a {
     padding: 30px 10%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
-    font-display: swap;
   }
 }
 
@@ -569,7 +575,6 @@ a {
   z-index: 100;
   font-size: 16px;
   font-family: "Abel", sans-serif;
-  font-display: swap;
   line-height: 25px;
   padding: 20px;
 }
@@ -589,7 +594,6 @@ a {
   font-size: 16px;
   font-family: "Abel", sans-serif;
   font-weight: 200;
-  font-display: swap;
 }
 
 .cookieButton:hover {
