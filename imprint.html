@@ -18,22 +18,18 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/navbar.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/content.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/styleSite.css">
+    <script src='https://www.google.com/recaptcha/api.js' async></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script type="text/javascript" src="scripts/scripts.js" async></script>
   </head>
 
   <body id="site">
 
     <div class="frame sticky" id="navbar">
-      <button class="linkTo button" data-easing="easeInQuart" onclick="window.location.href='index.html#contact'" onfocus="this.blur()">Kontakt</button>
-      <button class="scrollToStart button" data-easing="easeInQuart" onfocus="this.blur()">Startseite</button>
+      <button class="linkTo button" onclick="window.location.href='index.html#contact'" onfocus="this.blur()">Kontakt</button>
+      <button class="start button" onclick="window.location.href='index.html'" onfocus="this.blur()">Startseite</button>
       <div class="responsiveMenu">
-        <button onclick="dropMenu()" class="dropMenu button">☰</button>
+        <button class="dropMenu button" onclick="dropMenu()" onfocus="this.blur()">☰</button>
         <div id="droppedMenuContent" class="menuContent">
           <button class="droppedLink button" onclick="window.location.href='index.html'" onfocus="this.blur()">Start</button>
           <button class="droppedLink button" onclick="window.location.href='index.html#services'" onfocus="this.blur()">Leistungen</button>
