@@ -119,11 +119,23 @@
     <div id="contact" class="content">
       <form class="contentContact" method="post" action="scripts/contact.php">
         <div class="frameMulti">
-          <label class="nameLabel" for="name"><input type="text" id="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value=""></label>
-          <label class="emailLabel" for="email"><input type="text" id="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value=""></label>
-          <label class="subjectLabel" for="subject"><input type="text" id="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value=""></label>
+          <div class="nameFrame">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib deinen Namen ein')" onchange="this.setCustomValidity('')" value="">
+          </div>
+          <div class="emailFrame">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="">
+          </div>
+          <div class="subjectFrame">
+            <label for="subject">Betreff</label>
+            <input type="text" id="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib deinen Betreff ein')" onchange="this.setCustomValidity('')" value="">
+          </div>
         </div>
-        <label class="messageLabel" for="message"><textarea rows="8" cols="30" id="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea></label>
+        <div class="messageFrame">
+            <label for="message">Nachricht</label>
+            <textarea rows="8" cols="30" id="message" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib deine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
+        </div>
         <div class="frame">
           <div class="g-recaptcha" data-sitekey="6LcKjHoUAAAAAEJ4Rpq3dAIeghxt14kewGdvac3C"></div>
         </div>

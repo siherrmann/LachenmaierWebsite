@@ -396,37 +396,35 @@ a {
   background-color: white;
 }
 
+label {
+  margin-left: 10px;
+}
+
+.nameFrame,
+.emailFrame,
+.subjectFrame {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.messageFrame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+}
+
 #name,
 #email,
-#subject {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Abel", sans-serif;
-  border: none;
-  height: 35px;
-  width: 96%;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-#message {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Abel", sans-serif;
-  border: none;
-  height: 98%;
-  width: 98%;
-  padding: 1% 1%;
-  border-radius: 5px;
-}
-
-.nameLabel,
-.emailLabel,
-.subjectLabel,
-.messageLabel,
+#subject,
+#message,
 .submit,
 .g-recaptcha {
-  margin: 10px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid #888;
   font-size: 20px;
@@ -434,14 +432,14 @@ a {
   font-family: "Abel", sans-serif;
 }
 
-.emailLabel,
-.subjectLabel,
-.nameLabel {
+#email,
+#subject,
+#name {
   height: 45px;
-  width: 30%;
+  max-width: 100%;
 }
 
-.messageLabel {
+#message {
   max-width: 100%;
   height: 30%;
 }
@@ -480,20 +478,20 @@ a {
 }
 
 @media all and (max-width: 1500px) {
-  .emailLabel,
-  .nameLabel {
-    width: 45%;
+  .emailFrame,
+  .nameFrame {
+    width: 47%;
   }
 
-  .subjectLabel {
+  .subjectFrame {
     width: 100%;
   }
 }
 
 @media all and (max-width: 1000px) {
-  .subjectLabel,
-  .emailLabel,
-  .nameLabel {
+  .subjectFrame,
+  .emailFrame,
+  .nameFrame {
     width: 100%;
   }
 }
