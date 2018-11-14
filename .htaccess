@@ -3,7 +3,7 @@
 
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresDefault "access plus 300 seconds"
+  ExpiresDefault "access plus 1 month 1hour"
 
   ExpiresByType image/jpg "access plus 1 month 1 hour"
   ExpiresByType image/jpeg "access plus 1 month 1 hour"
