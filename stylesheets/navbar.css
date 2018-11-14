@@ -34,18 +34,66 @@
   background-color: #9e291c;
 }
 
-.frameLine {
-  height: 1px;
-  width: 100%;
-  background-color: white;
-}
-
 .sticky {
   position: sticky;
   top: 0;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.responsiveMenu {
+  display: none;
+}
+
+.dropMenu {
+  float: right;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 1%;
+  padding-bottom: 12px;
+  width: 98%;
+  border: none;
+  background-color: #c03221;
+  color: white;
+}
+
+.dropMenu:hover {
+  background-color: #9e291c;
+}
+
+.menuContent {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.droppedLink {
+  float: right;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 2px 1%;
+  padding-bottom: 12px;
+  width: 98%;
+  border: none;
+  background-color: white;
+}
+
+.droppedLink:hover {
+  background-color: #ccc;
+}
+
+.drop {
+  display: flex;
+}
+
+.frameLine {
+  height: 1px;
+  width: 100%;
+  background-color: white;
 }
 
 .lineBlack {
@@ -59,7 +107,13 @@
   .linkTo,
   .scrollToStart,
   .scrollToLocation {
-    padding-right: 0px;
+    display: none;
+  }
+
+  .responsiveMenu {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: auto;
   }
 }
