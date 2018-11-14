@@ -21,21 +21,22 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script type="text/javascript" src="scripts/scripts.js" async></script>
+    <script type="text/javascript" src="scripts/slide.js" async></script>
   </head>
 
   <body>
 
     <div class="frame sticky" id="navbar">
-      <button class="scrollToLocation button" data-easing="easeInQuart" href="#location" onfocus="this.blur()">Anfahrt</button>
+      <button class="scrollToLocation button" onclick="driveTo('#location');" onfocus="this.blur()">Anfahrt</button>
       <button class="linkTo button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Impressum</button>
       <button class="scrollToStart button" data-easing="easeInQuart" href=".header" onfocus="this.blur()">Startseite</button>
       <div class="responsiveMenu">
         <button onclick="dropMenu()" class="dropMenu button">☰</button>
         <div id="droppedMenuContent" class="menuContent">
-          <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Über uns</button>
-          <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Leistungen</button>
-          <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Kontakt</button>
-          <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Anfahrt</button>
+          <button class="droppedLink button" onclick="driveTo('.header');" onfocus="this.blur()">Start</button>
+          <button class="droppedLink button" onclick="driveTo('#services');" onfocus="this.blur()">Leistungen</button>
+          <button class="droppedLink button" onclick="driveTo('#contact');" onfocus="this.blur()">Kontakt</button>
+          <button class="droppedLink button" onclick="driveTo('#location');" onfocus="this.blur()">Anfahrt</button>
           <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Impressum</button>
         </div>
       </div>
