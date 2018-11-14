@@ -41,7 +41,7 @@ h3 {
 }
 p {
   font-family: "Abel", sans-serif;
-  font-display: auto;
+  font-display: swap;
 }
 a {
   color: black;
@@ -61,7 +61,7 @@ a {
   font-size: 20px;
   font-family: "Abel", sans-serif;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
 }
 
 .frameMulti {
@@ -230,7 +230,7 @@ a {
   text-align: center;
   font-size: 50px;
   font-family: "Abel", sans-serif;
-  font-display: auto;
+  font-display: swap;
   color: black;
 }
 
@@ -301,7 +301,7 @@ a {
   padding: 50px 17%;
   font-size: 20px;
   font-family: "Abel", sans-serif;
-  font-display: auto;
+  font-display: swap;
 }
 
 .contentSite {
@@ -400,7 +400,7 @@ a {
   font-size: 20px;
   font-weight: 500;
   font-family: "Abel", sans-serif;
-  font-display: auto;
+  font-display: swap;
 }
 
 #email,
@@ -484,7 +484,7 @@ a {
     padding: 50px 2%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
-    font-display: auto;
+    font-display: swap;
   }
 
   .g-recaptcha,
@@ -507,7 +507,7 @@ a {
     padding: 30px 10%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
-    font-display: auto;
+    font-display: swap;
   }
 }
 
@@ -569,7 +569,7 @@ a {
   z-index: 100;
   font-size: 16px;
   font-family: "Abel", sans-serif;
-  font-display: auto;
+  font-display: swap;
   line-height: 25px;
   padding: 20px;
 }
@@ -589,7 +589,7 @@ a {
   font-size: 16px;
   font-family: "Abel", sans-serif;
   font-weight: 200;
-  font-display: auto;
+  font-display: swap;
 }
 
 .cookieButton:hover {
