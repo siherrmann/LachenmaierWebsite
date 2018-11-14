@@ -41,6 +41,7 @@ h3 {
 }
 p {
   font-family: "Abel", sans-serif;
+  font-display: auto;
 }
 a {
   color: black;
@@ -60,6 +61,7 @@ a {
   font-size: 20px;
   font-family: "Abel", sans-serif;
   font-weight: 400;
+  font-display: auto;
 }
 
 .frameMulti {
@@ -228,6 +230,7 @@ a {
   text-align: center;
   font-size: 50px;
   font-family: "Abel", sans-serif;
+  font-display: auto;
   color: black;
 }
 
@@ -298,6 +301,7 @@ a {
   padding: 50px 17%;
   font-size: 20px;
   font-family: "Abel", sans-serif;
+  font-display: auto;
 }
 
 .contentSite {
@@ -396,6 +400,7 @@ a {
   font-size: 20px;
   font-weight: 500;
   font-family: "Abel", sans-serif;
+  font-display: auto;
 }
 
 #email,
@@ -479,6 +484,7 @@ a {
     padding: 50px 2%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
+    font-display: auto;
   }
 
   .g-recaptcha,
@@ -501,6 +507,7 @@ a {
     padding: 30px 10%;
     font-size: 20px;
     font-family: "Abel", sans-serif;
+    font-display: auto;
   }
 }
 
@@ -562,6 +569,7 @@ a {
   z-index: 100;
   font-size: 16px;
   font-family: "Abel", sans-serif;
+  font-display: auto;
   line-height: 25px;
   padding: 20px;
 }
@@ -581,6 +589,7 @@ a {
   font-size: 16px;
   font-family: "Abel", sans-serif;
   font-weight: 200;
+  font-display: auto;
 }
 
 .cookieButton:hover {
