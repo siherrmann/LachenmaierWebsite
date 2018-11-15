@@ -23,19 +23,19 @@
   <body id="site">
 
     <div class="frame sticky" id="navbar">
+      <button class="linkTo button" onclick="window.location.href='index.html#info'" onfocus="this.blur()">Über uns</button>
+      <button class="linkTo button" onclick="window.location.href='index.html#services'" onfocus="this.blur()">Leistungen</button>
       <button class="linkTo button" onclick="window.location.href='index.html#contact'" onfocus="this.blur()">Kontakt</button>
-      <button class="linkTo button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Impressum</button>
-      <button class="linkTo button" onclick="driveTo('#dataProtection');" onfocus="this.blur()">Datenschutz</button>
+      <button class="linkTo button" onclick="window.location.href='index.html#location'" onfocus="this.blur()">Anfahrt</button>
       <button class="start button" onclick="window.location.href='index.html'" onfocus="this.blur()">Startseite</button>
       <div class="responsiveMenu">
         <button class="dropMenu button" onclick="dropMenu()" onfocus="this.blur()">☰</button>
         <div id="droppedMenuContent" class="menuContent">
           <button class="droppedLink button" onclick="window.location.href='index.html'" onfocus="this.blur()">Start</button>
+          <button class="droppedLink button" onclick="window.location.href='index.html#info'" onfocus="this.blur()">Über uns</button>
           <button class="droppedLink button" onclick="window.location.href='index.html#services'" onfocus="this.blur()">Leistungen</button>
           <button class="droppedLink button" onclick="window.location.href='index.html#contact'" onfocus="this.blur()">Kontakt</button>
           <button class="droppedLink button" onclick="window.location.href='index.html#location'" onfocus="this.blur()">Anfahrt</button>
-          <button class="droppedLink button" onclick="window.location.href='imprint.html'" onfocus="this.blur()">Impressum</button>
-          <button class="droppedLink button" onclick="driveTo('#dataProtection');" onfocus="this.blur()">Datenschutz</button>
         </div>
       </div>
       <div class="frameLine">
@@ -174,7 +174,9 @@
 
     <div class="footerCopyright">
       <p>© Lachenmaier Werkzeugbau GmbH<br>
-        Made with ♥ by <a href="https://github.com/siherrmann" style="color: white">siherrmann</a></p>
+        <a href="imprint.html" style="color: white">Impressum</a>
+        <a href="dataProtection.html" style="color: white">Datenschutz</a><br>
+        Made with ♥ by <a href="https://github.com/siherrmann" style="color: white">siherrmann</a><br></p>
     </div>
 
   </body>
