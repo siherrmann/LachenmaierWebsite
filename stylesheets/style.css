@@ -220,14 +220,13 @@ a {
   justify-content: flex-start;
 }
 
-.headerPictureFrame {
-  height: auto;
-  width: 100%;
-}
-
 .headerPicture {
-  height: auto;
+  height: 30vw;
   width: 100%;
+  background-image: url(../graphics/Haus3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headerTextFrame {
@@ -288,6 +287,15 @@ a {
   .scrollToServices {
     width: 100%;
     margin: 10px;
+  }
+
+  .headerPicture {
+    height: 40vw;
+    width: 100%;
+    background-image: url(../graphics/LWLogo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
