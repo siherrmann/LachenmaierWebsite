@@ -25,6 +25,10 @@
   z-index: 10;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-flow: wrap;
@@ -163,9 +167,8 @@ a {
   float: right;
   text-decoration: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 12px 0px;
   margin: 2px 1%;
-  padding-bottom: 12px;
   width: 98%;
   border: none;
   background-color: white;
@@ -307,6 +310,7 @@ a {
 
 .content {
   width: 100%;
+  justify-content: center;
 }
 
 .contentInfo,
