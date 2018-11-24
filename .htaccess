@@ -10,6 +10,7 @@
 	ExpiresByType text/ecmascript "access plus 1 weeks"
 	ExpiresByType image/gif "access plus 1 years"
 	ExpiresByType image/png "access plus 1 years"
+	ExpiresByType image/svg "access plus 1 years"
 	ExpiresByType image/jpeg "access plus 1 years"
 	ExpiresByType image/ico "access plus 1 years"
 	ExpiresByType image/icon "access plus 1 years"
