@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-flow: wrap;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 22px;
   background-color: white;
   background-attachment: fixed;
   background-size: cover;
@@ -74,14 +74,13 @@ a {
   transition: all 0.3s ease-in-out;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
   font-family: "Abel", sans-serif;
   font-weight: 400;
 }
 
 .frameMulti {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   flex-flow: wrap;
   justify-content: space-between;
 }
@@ -318,13 +317,11 @@ a {
 .contentContact,
 .contentSite,
 .contentImprint {
-  flex: 0 1 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 
   overflow: hidden;
   padding: 50px 17%;
-  font-size: 20px;
   font-family: "Abel", sans-serif;
 }
 
@@ -342,41 +339,78 @@ a {
 }
 
 .contentSlide {
-  background: white;
-  margin: 20px auto;
-  width: 95%;
-  max-width: 800px;
+  margin: 40px auto 0px auto;
+  width: 66vw;
+  height: auto;
 }
 
 .slide {
+  height: 40vw;
   display: none;
+}
+
+.picture1,
+.picture2,
+.picture3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.picture1 {
+  background-image: url(../graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg);
+}
+
+.picture2 {
+  background-image: url(../graphics/fach-spritzgusswerkzeug-gr.jpg);
+}
+
+.picture3 {
+  background-image: url(../graphics/graphitelektrodenbearbeitung-gr.jpg);
+}
+
+.left,
+.right {
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  width: 50%;
+}
+
+.left {
+  float: left;
+  justify-content: flex-start;
+}
+
+.right {
+  float: right;
+  justify-content: flex-end;
+}
+
+.textLeftRight {
+  color: #666;
+  padding: 20px;
+  -ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
 }
 
 .text {
   text-align: center;
   padding: 0px 20px;
-}
-
-.left,
-.right,
-.dotsBlack,
-.dotsTransparent {
-  cursor: pointer;
-  width: auto;
-  color: #666;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+  -ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
 }
 
 .dotsTransparent,
 .dotsBlack {
   text-align: center;
+  margin: 10px auto;
 }
 
 .dotsBlack {
@@ -446,8 +480,8 @@ label {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #888;
-  font-size: 20px;
   font-weight: 500;
+  font-size: 22px;
   font-family: "Abel", sans-serif;
 }
 
@@ -524,13 +558,11 @@ label {
   }
 
   .contentContact {
-    flex: 0 1 100%;
     display: flex;
     flex-direction: column;
 
     overflow: hidden;
     padding: 50px 2%;
-    font-size: 20px;
     font-family: "Abel", sans-serif;
   }
 
@@ -546,13 +578,11 @@ label {
   .contentServices,
   .contentContact,
   .contentSite {
-    flex: 0 1 100%;
     display: flex;
     flex-direction: column;
 
     overflow: hidden;
     padding: 30px 10%;
-    font-size: 20px;
     font-family: "Abel", sans-serif;
   }
 }
@@ -600,7 +630,7 @@ label {
   width: 100%;
   background-color: #666;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
 }
 

@@ -19,10 +19,7 @@
     <meta name="msapplication-TileColor" content="#195757">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#195757">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <script type="text/javascript" src="scripts/scripts.js" async></script>
-    <script type="text/javascript" src="scripts/slide.js" async></script>
   </head>
 
   <body>
@@ -78,16 +75,47 @@
 
     <div class="content">
       <div class="contentSlide">
-        <img class="slide" alt="konstruktion-2fach-werkzeug-auswerferseite" src="graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg" style="width:100%">
-        <img class="slide" alt="fach-spritzgusswerkzeug" src="graphics/fach-spritzgusswerkzeug-gr.jpg" style="width:100%">
-        <img class="slide" alt="graphitelektrodenbearbeitung" src="graphics/graphitelektrodenbearbeitung-gr.jpg" style="width:100%">
-        <div class="text">
-          <div class="left" onclick="nextPicture(-1)">&#10094;</div>
-          <div class="right" onclick="nextPicture(1)">&#10095;</div>
-          <span class="dotsTransparent dot" onclick="currentPicture(1)"></span>
-          <span class="dotsTransparent dot" onclick="currentPicture(2)"></span>
-          <span class="dotsTransparent dot" onclick="currentPicture(3)"></span>
+        <div class="slide picture1">
+          <div class="left" onclick="nextPicture(-1)">
+            <div class="textLeftRight">
+              &#10094;
+            </div>
+          </div>
+          <div class="right" onclick="nextPicture(1)">
+            <div class="textLeftRight">
+              &#10095;
+            </div>
+          </div>
         </div>
+        <div class="slide picture2">
+          <div class="left" onclick="nextPicture(-1)">
+            <div class="textLeftRight">
+              &#10094;
+            </div>
+          </div>
+          <div class="right" onclick="nextPicture(1)">
+            <div class="textLeftRight">
+              &#10095;
+            </div>
+          </div>
+        </div>
+        <div class="slide picture3">
+          <div class="left" onclick="nextPicture(-1)">
+            <div class="textLeftRight">
+              &#10094;
+            </div>
+          </div>
+          <div class="right" onclick="nextPicture(1)">
+            <div class="textLeftRight">
+              &#10095;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <span class="dotsTransparent dot" onclick="currentPicture(1)"></span>
+        <span class="dotsTransparent dot" onclick="currentPicture(2)"></span>
+        <span class="dotsTransparent dot" onclick="currentPicture(3)"></span>
       </div>
     </div>
 
@@ -200,6 +228,10 @@
     </div>
 
     <?php  }; ?>
+
+    <script type="text/javascript" src="scripts/scripts.js" async></script>
+    <script type="text/javascript" src="scripts/slide.js" async></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
   </body>
 </html>
