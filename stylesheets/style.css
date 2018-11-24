@@ -194,6 +194,15 @@ a {
   background-color: #888;
 }
 
+@media all and (max-width: 1300px) {
+  .linkTo,
+  .start {
+    width: 14vw;
+    min-width: 80px;
+    margin: 1vw;
+  }
+}
+
 @media all and (max-width: 620px) {
   .linkTo,
   .start {
@@ -277,9 +286,6 @@ a {
 
 .scrollToServices:hover {
   background-color: #9e291c;
-}
-
-@media all and (max-width: 1300px) {
 }
 
 @media all and (max-width: 620px) {
@@ -556,6 +562,14 @@ label {
     overflow: hidden;
     font-family: "Abel", sans-serif;
     flex-direction: column;
+  }
+
+  .contentSlide {
+    width: 100%;
+  }
+
+  .slide {
+    height: 70vw;
   }
 
   .g-recaptcha,
