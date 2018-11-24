@@ -1,43 +1,42 @@
 @font-face {
   font-family: "Abel";
-  font-style: normal;
   font-display: block;
+  font-style: normal;
   font-weight: 400;
   src: local("☺"),
     url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPQ.woff2)
       format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
 }
 
 #navbar {
+  z-index: 10;
   display: flex;
-  justify-content: flex-end;
-  flex-flow: wrap;
-
-  overflow: hidden;
-  background-color: white;
   width: 100%;
   height: auto;
-  margin-left: auto;
   margin-right: auto;
-  z-index: 10;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: white;
+  flex-flow: wrap;
+  justify-content: flex-end;
 }
 
 html {
-  scroll-behavior: smooth;
 }
 
 body {
+  z-index: 0;
   display: flex;
-  flex-flow: wrap;
   margin: 0 auto;
-  font-size: 22px;
   background-color: white;
   background-attachment: fixed;
   background-size: cover;
-  z-index: 0;
+  font-size: 22px;
+  flex-flow: wrap;
+}
+
+button {
+  font-size: 22px;
 }
 
 form {
@@ -53,29 +52,32 @@ h1 {
   text-align: center;
   font-weight: 200;
 }
+
 h3 {
   color: black;
 }
+
 p {
   font-family: "Abel", sans-serif;
 }
+
 a {
   color: black;
 }
 
 .responsive {
-  height: 100%;
-  max-width: 500px;
   width: auto;
+  max-width: 500px;
+  height: 100%;
 }
 
 .button {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
   text-align: center;
   text-decoration: none;
   font-family: "Abel", sans-serif;
   font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .frameMulti {
@@ -90,40 +92,38 @@ a {
   border: none;
 }
 
-/*
- * navbar
- */
+/* navbar */
 
 .sticky {
   position: sticky;
   top: 0;
   width: 100%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .linkTo,
 .start {
-  float: right;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  padding-bottom: 12px;
   width: 15vw;
-  max-width: 180px;
   min-width: 100px;
+  max-width: 180px;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 12px;
   border: none;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .linkTo {
-  background-color: white;
   color: black;
+  background-color: white;
 }
 
 .start {
-  background-color: #c03221;
   color: white;
+  background-color: #c03221;
 }
 
 .linkTo:hover {
@@ -139,16 +139,16 @@ a {
 }
 
 .dropMenu {
-  float: right;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 1%;
-  padding-bottom: 12px;
   width: 98%;
-  border: none;
-  background-color: #c03221;
+  float: right;
+  margin: 1%;
+  padding: 10px;
+  padding-bottom: 12px;
   color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #c03221;
+  text-decoration: none;
 }
 
 .dropMenu:hover {
@@ -157,20 +157,20 @@ a {
 
 .menuContent {
   display: none;
-  flex-direction: column;
   width: 100%;
   height: auto;
+  flex-direction: column;
 }
 
 .droppedLink {
-  float: right;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 12px 0px;
-  margin: 2px 1%;
   width: 98%;
+  float: right;
+  margin: 2px 1%;
+  padding: 12px 0px;
   border: none;
+  border-radius: 5px;
   background-color: white;
+  text-decoration: none;
 }
 
 .droppedLink:hover {
@@ -182,14 +182,14 @@ a {
 }
 
 .frameLine {
-  height: 1px;
   width: 100%;
+  height: 1px;
   background-color: white;
 }
 
 .lineBlack {
-  height: 1px;
   width: 66%;
+  height: 1px;
   float: right;
   background-color: #888;
 }
@@ -202,69 +202,65 @@ a {
 
   .responsiveMenu {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
+    flex-direction: column;
   }
 }
 
-/*
- * header
- */
+/* header */
 
 .header {
+  display: flex;
+  height: auto;
   overflow: hidden;
   background-color: white;
-  height: auto;
-
   flex: 1 1 100%;
-  display: flex;
   flex-direction: column;
-
   justify-content: flex-start;
 }
 
 .headerPicture {
-  height: 30vw;
   width: 100%;
+  height: 30vw;
   background-image: url(../graphics/Haus3.1.svg);
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .headerTextFrame {
-  background-color: white;
-  height: auto;
   width: 100%;
+  height: auto;
+  background-color: white;
 }
 
 .headerText {
   padding: 1%;
-  text-align: center;
-  font-size: 50px;
-  font-family: "Abel", sans-serif;
   color: black;
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  font-size: 50px;
 }
 
 .headerButton {
   max-width: 430px;
+  margin-right: auto;
   margin-bottom: 5%;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .scrollToContact,
 .scrollToServices {
-  text-align: center;
-  border-radius: 5px;
+  width: 150px;
+  height: 50px;
   margin: 20px;
   padding: 10px;
-  height: 50px;
-  width: 150px;
-  background-color: #069059;
   color: white;
   border: none;
+  border-radius: 5px;
+  background-color: #069059;
+  text-align: center;
 }
 
 .scrollToContact {
@@ -294,35 +290,32 @@ a {
   }
 
   .headerPicture {
-    height: 40vw;
     width: 100%;
+    height: 40vw;
     background-image: url(../graphics/LWLogo.svg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   }
 }
 
-/*
- * content
- */
+/* content */
 
 .content {
   width: 100%;
   justify-content: center;
 }
 
+.contentContact,
+.contentImprint,
 .contentInfo,
 .contentServices,
-.contentContact,
-.contentSite,
-.contentImprint {
+.contentSite {
   display: flex;
-  flex-flow: column wrap;
-
-  overflow: hidden;
   padding: 50px 17%;
+  overflow: hidden;
   font-family: "Abel", sans-serif;
+  flex-flow: column wrap;
 }
 
 .contentSite {
@@ -339,22 +332,22 @@ a {
 }
 
 .contentSlide {
-  margin: 40px auto 0px auto;
   width: 66vw;
   height: auto;
+  margin: 40px auto 0px auto;
 }
 
 .slide {
-  height: 40vw;
   display: none;
+  height: 40vw;
 }
 
 .picture1,
 .picture2,
 .picture3 {
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .picture1 {
@@ -372,13 +365,13 @@ a {
 .left,
 .right {
   display: flex;
-  -webkit-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  height: 100%;
   width: 50%;
+  height: 100%;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  cursor: pointer;
 }
 
 .left {
@@ -392,47 +385,47 @@ a {
 }
 
 .textLeftRight {
-  color: #666;
   padding: 20px;
-  -ms-user-select: None;
+  color: #666;
   -moz-user-select: None;
+  -ms-user-select: None;
   -webkit-user-select: None;
 }
 
 .text {
-  text-align: center;
   padding: 0px 20px;
-  -ms-user-select: None;
+  text-align: center;
   -moz-user-select: None;
+  -ms-user-select: None;
   -webkit-user-select: None;
 }
 
-.dotsTransparent,
-.dotsBlack {
-  text-align: center;
+.dotsBlack,
+.dotsTransparent {
   margin: 10px auto;
+  text-align: center;
 }
 
 .dotsBlack {
-  height: 15px;
+  display: inline-block;
   width: 15px;
+  height: 15px;
   padding: 0;
   border: 1px solid;
   border-color: #666;
   border-radius: 50%;
   background-color: #888;
-  display: inline-block;
 }
 
 .dotsTransparent {
-  height: 15px;
+  display: inline-block;
   width: 15px;
+  height: 15px;
   padding: 0;
   border: 1px solid;
   border-color: #888;
   border-radius: 50%;
   background-color: transparent;
-  display: inline-block;
 }
 
 .dotsBlack:hover,
@@ -453,43 +446,43 @@ label {
   margin-left: 10px;
 }
 
-.nameFrame,
 .emailFrame,
+.nameFrame,
 .subjectFrame {
   display: flex;
-  flex-direction: column;
   width: 32%;
   height: auto;
   margin-top: 10px;
+  flex-direction: column;
 }
 
 .messageFrame {
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
   margin: 10px 0px;
+  flex-direction: column;
 }
 
-#name,
 #email,
-#subject,
 #message,
-.submit,
-.g-recaptcha {
+#name,
+#subject,
+.g-recaptcha,
+.submit {
   padding: 5px;
-  border-radius: 5px;
   border: 1px solid #888;
-  font-weight: 500;
-  font-size: 22px;
+  border-radius: 5px;
   font-family: "Abel", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 #email,
-#subject,
-#name {
-  height: 45px;
+#name,
+#subject {
   max-width: 100%;
+  height: 45px;
 }
 
 #message {
@@ -498,20 +491,20 @@ label {
 }
 
 .g-recaptcha {
-  height: 78px;
   width: 304px;
+  height: 78px;
   padding: 0px;
   border: none;
 }
 
 .submit {
+  width: 304px;
+  height: 45px;
   float: right;
   margin-right: 10px;
-  background: #c03221;
-  height: 45px;
-  width: 304px;
   color: white;
   border: none;
+  background: #c03221;
 }
 
 .submit:hover {
@@ -519,10 +512,10 @@ label {
 }
 
 .contentMap {
+  width: 100%;
+  height: 220px;
   overflow: hidden;
   background-color: white;
-  height: 220px;
-  width: 100%;
 }
 
 .map {
@@ -542,9 +535,9 @@ label {
 }
 
 @media all and (max-width: 1000px) {
-  .subjectFrame,
   .emailFrame,
-  .nameFrame {
+  .nameFrame,
+  .subjectFrame {
     width: 100%;
   }
 }
@@ -552,118 +545,113 @@ label {
 @media all and (max-width: 880px) {
   .contentAboutUs1,
   .contentAboutUs2 {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     text-align: center;
   }
 
   .contentContact {
     display: flex;
-    flex-direction: column;
-
-    overflow: hidden;
     padding: 50px 2%;
+    overflow: hidden;
     font-family: "Abel", sans-serif;
+    flex-direction: column;
   }
 
   .g-recaptcha,
   .submit {
     display: block;
     float: none;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
+  .contentContact,
   .contentInfo,
   .contentServices,
-  .contentContact,
   .contentSite {
     display: flex;
-    flex-direction: column;
-
-    overflow: hidden;
     padding: 30px 10%;
+    overflow: hidden;
     font-family: "Abel", sans-serif;
+    flex-direction: column;
   }
 }
 
-/*
- * footer
- */
+/* footer */
 
 .footer {
-  flex: 1 1 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-
+  width: 100%;
+  height: auto;
   overflow: hidden;
   background-color: white;
-  height: auto;
-  width: 100%;
+  flex: 1 1 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerPartFrame {
   display: flex;
-  flex-direction: column;
   width: 280px;
   height: auto;
   margin: 10px 20px;
+  flex-direction: column;
 }
 
 .footerPicture {
   display: block;
-  margin: 0px auto;
   width: 50px;
   height: 50px;
+  margin: 0px auto;
   padding-top: 40px;
 }
 
 .footerText {
-  width: 100%;
   display: block;
-  text-align: center;
+  width: 100%;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .footerCopyright {
   width: 100%;
+  color: white;
   background-color: #666;
   text-align: center;
   font-size: 16px;
-  color: white;
 }
 
 #cookie-popup {
-  text-align: center;
-  color: white;
-  background: #666;
+  z-index: 100;
   position: fixed;
   bottom: 0px;
   left: 0;
   width: 250px;
-  z-index: 100;
-  font-size: 16px;
-  font-family: "Abel", sans-serif;
-  line-height: 25px;
   padding: 20px;
+  color: white;
+  background: #666;
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .cookieButton {
-  margin: 10px 0px;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  height: 50px;
   width: 200px;
-  background-color: #195757;
-  transition: all 0.3s ease-in-out;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 5px;
   color: white;
   border: none;
-  cursor: pointer;
-  font-size: 16px;
+  border-radius: 5px;
+  background-color: #195757;
+  text-align: center;
   font-family: "Abel", sans-serif;
+  font-size: 16px;
   font-weight: 200;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .cookieButton:hover {
@@ -672,22 +660,21 @@ label {
 
 @media all and (max-width: 880px) {
   .footer {
-    flex: 1 1 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    width: 100%;
+    height: auto;
     overflow: hidden;
     background-color: white;
-    height: auto;
-    width: 100%;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .footerPartFrame {
     display: flex;
-    flex-direction: column;
     width: 250px;
     height: auto;
     margin: 10px auto;
+    flex-direction: column;
   }
 }
