@@ -11,25 +11,6 @@ function cookieOk() {
   document.getElementById("cookie-popup").style.display = "none";
 }
 
-function driveTo(id) {
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-}
-
-// window.onscroll = function() {
-//   makeSticky();
-// };
-//
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-//
-// function makeSticky() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
 function dropMenu() {
   document.getElementById("droppedMenuContent").classList.toggle("drop");
 }
