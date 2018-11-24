@@ -31,12 +31,12 @@ body {
   background-color: white;
   background-attachment: fixed;
   background-size: cover;
-  font-size: 22px;
+  font-size: 20px;
   flex-flow: wrap;
 }
 
 button {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 form {
@@ -474,7 +474,7 @@ label {
   border: 1px solid #888;
   border-radius: 5px;
   font-family: "Abel", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -619,7 +619,7 @@ label {
   color: white;
   background-color: #666;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #cookie-popup {
