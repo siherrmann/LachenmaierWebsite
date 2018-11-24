@@ -35,6 +35,7 @@ AddEncoding gzip .gzip
 	AddOutputFilterByType DEFLATE application/javascript
 	AddOutputFilterByType DEFLATE application/x-javascript
 	AddOutputFilterByType DEFLATE application/x-shockwave-flash
+	AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
 AddDefaultCharset UTF-8
