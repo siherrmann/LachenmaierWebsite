@@ -22,6 +22,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -262,14 +263,12 @@ a {
 .scrollToContact,
 .scrollToServices {
   width: 150px;
-  height: 50px;
+  height: 40px;
   margin: 20px;
-  padding: 10px;
+  padding-top: 15px;
   color: white;
   border: none;
   border-radius: 5px;
-  background-color: #069059;
-  text-align: center;
 }
 
 .scrollToContact {
