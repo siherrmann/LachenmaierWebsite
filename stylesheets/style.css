@@ -349,22 +349,37 @@ a {
 
 .picture1,
 .picture2,
-.picture3 {
+.picture3,
+.picture4,
+.picture5,
+.picture6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .picture1 {
-  background-image: url(../graphics/konstruktion-2fach-werkzeug-auswerferseite-gr.jpg);
+  background-image: url(../graphics/slide1.jpg);
 }
 
 .picture2 {
-  background-image: url(../graphics/fach-spritzgusswerkzeug-gr.jpg);
+  background-image: url(../graphics/slide2.jpg);
 }
 
 .picture3 {
-  background-image: url(../graphics/graphitelektrodenbearbeitung-gr.jpg);
+  background-image: url(../graphics/slide3.jpg);
+}
+
+.picture4 {
+  background-image: url(../graphics/slide4.jpg);
+}
+
+.picture5 {
+  background-image: url(../graphics/slide5.jpg);
+}
+
+.picture6 {
+  background-image: url(../graphics/slide6.jpg);
 }
 
 .left,
