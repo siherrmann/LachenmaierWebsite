@@ -315,7 +315,8 @@ a {
 .contentImprint,
 .contentInfo,
 .contentServices,
-.contentSite {
+.contentSite,
+.contentJobs {
   display: flex;
   padding: 50px 17%;
   overflow: hidden;
@@ -458,6 +459,20 @@ a {
   background: #ddd;
 }
 
+.contentPanorama {
+  background-image: url(../graphics/panorama.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 30vw;
+  margin: 0;
+}
+
+.contentJobs {
+  background: #ddd;
+}
+
 .contentContact {
   background-color: white;
 }
@@ -597,7 +612,8 @@ label {
   .contentContact,
   .contentInfo,
   .contentServices,
-  .contentSite {
+  .contentSite,
+  .contentJobs {
     display: flex;
     padding: 30px 10%;
     overflow: hidden;
