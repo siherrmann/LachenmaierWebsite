@@ -314,6 +314,15 @@ a {
 
 /* content */
 
+.centered {
+  justify-content: center;
+}
+
+.textCenteredLeft {
+  justify-content: center;
+  align-items: left;
+}
+
 .wrap {
   flex-flow: row wrap;
 }
@@ -328,7 +337,6 @@ a {
 
 .content {
   display: flex;
-  justify-content: center;
   width: 100%;
   height: 70vh;
   padding: 50px 17%;
@@ -360,7 +368,6 @@ a {
 .contentServices,
 .contentJobs {
   background: #ddd;
-  align-items: left;
   justify-content: center;
 }
 
