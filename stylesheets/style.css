@@ -19,6 +19,7 @@
   background-color: white;
   flex-flow: wrap;
   justify-content: flex-end;
+  box-shadow: 0px 10px 10px #ddd;
 }
 
 html {
@@ -29,7 +30,7 @@ body {
   z-index: 0;
   display: flex;
   margin: 0 auto;
-  background-color: white;
+  background: url(../graphics/background1.jpg);
   background-attachment: fixed;
   background-size: cover;
   font-size: 20px;
@@ -81,11 +82,15 @@ a {
   cursor: pointer;
 }
 
-.frameMulti {
+.frameRowMulti {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.frameColumnMulti {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .frame {
@@ -119,7 +124,6 @@ a {
 
 .linkTo {
   color: black;
-  background-color: white;
 }
 
 .start {
@@ -224,16 +228,21 @@ a {
   display: flex;
   height: auto;
   overflow: hidden;
-  background-color: white;
   flex: 1 1 100%;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .headerPicture {
-  width: 100%;
+  /* width: 100%;
   height: 30vw;
   background-image: url(../graphics/Haus3.1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  width: 100%;
+  height: 30vw;
+  background-image: url(../graphics/LWLogo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -242,7 +251,6 @@ a {
 .headerTextFrame {
   width: 100%;
   height: auto;
-  background-color: white;
 }
 
 .headerText {
@@ -306,9 +314,25 @@ a {
 
 /* content */
 
+.wrap {
+  flex-flow: row wrap;
+}
+
+.wrapReverse {
+    flex-flow: row wrap-reverse;
+}
+
+.withBackgroundColor {
+  background: #ddd;
+}
+
 .content {
-  width: 100%;
+  display: flex;
   justify-content: center;
+  width: 100%;
+  height: 70vh;
+  padding: 50px 17%;
+  overflow: hidden;
 }
 
 .contentContact,
@@ -318,7 +342,6 @@ a {
 .contentSite,
 .contentJobs {
   display: flex;
-  padding: 50px 17%;
   overflow: hidden;
   font-family: "Abel", sans-serif;
   flex-flow: column wrap;
@@ -333,19 +356,23 @@ a {
   height: 700px;
 }
 
-.contentInfo {
+.contentInfo,
+.contentServices,
+.contentJobs {
   background: #ddd;
+  align-items: left;
+  justify-content: center;
 }
 
 .contentSlide {
-  width: 66vw;
+  width: 100%;
   height: auto;
-  margin: 40px auto 0px auto;
+  max-height: 70vh;
 }
 
 .slide {
   display: none;
-  height: 40vw;
+  height: 70vh;
 }
 
 .picture1,
@@ -455,26 +482,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.contentServices {
-  background: #ddd;
-}
-
 .contentPanorama {
   background-image: url(../graphics/panorama.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 100%;
-  height: 30vw;
-  margin: 0;
-}
-
-.contentJobs {
-  background: #ddd;
-}
-
-.contentContact {
-  background-color: white;
+  min-height: 200px;
 }
 
 label {
@@ -522,7 +535,7 @@ label {
 
 #message {
   max-width: 100%;
-  height: 260px;
+  height: 360px;
 }
 
 .g-recaptcha {
@@ -550,7 +563,6 @@ label {
   width: 100%;
   height: 220px;
   overflow: hidden;
-  background-color: white;
 }
 
 .map {
@@ -559,6 +571,11 @@ label {
 }
 
 @media all and (max-width: 1500px) {
+  .content {
+    padding: 50px 5%;
+    height: max-content;
+  }
+
   .emailFrame,
   .nameFrame {
     width: 47%;
@@ -629,7 +646,6 @@ label {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: white;
   flex: 1 1 100%;
   flex-direction: row;
   justify-content: center;
@@ -708,7 +724,6 @@ label {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: white;
     flex: 1 1 100%;
     flex-direction: column;
     justify-content: center;

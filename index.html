@@ -87,7 +87,7 @@
       <div class="headerPicture"></div>
       <div class="headerTextFrame">
         <h1 class="headerText">Lachenmaier Werkzeugbau GmbH</h1>
-        <div class="headerButton frameMulti">
+        <div class="headerButton frameRowMulti">
           <a
             class="scrollToContact button"
             href="#contact"
@@ -104,8 +104,8 @@
       </div>
     </div>
 
-    <div class="content">
-      <div id="info" class="contentInfo">
+    <div class="content wrap withBackgroundColor" id="info">
+      <div class="contentInfo">
         <h2>Herzlich Willkommen</h2>
         <p>
           …auf der Website der Lachenmaier Werkzeugbau GmbH in Bietigheim, Ihrem
@@ -140,7 +140,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content wrap">
       <div class="contentSlide">
         <div class="slide picture1">
           <div class="left" onclick="nextPicture(-1)">
@@ -201,7 +201,7 @@
       </div>
     </div>
 
-    <div id="services" class="content">
+    <div id="services" class="content wrap withBackgroundColor">
       <div class="contentServices">
         <h3>Unsere Leistungen</h3>
         <p>Unser Leistungsspektrum umfasst:</p>
@@ -240,7 +240,7 @@
     <div class="content contentPanorama">
     </div>
 
-    <div id="jobs" class="content">
+    <div id="jobs" class="content wrap withBackgroundColor">
       <div class="contentJobs">
         <h3>Stellenangebote</h3>
         <h4>Ausbildungsstelle Feinwerkmechaniker Fachrichtung Formenbau</h4>
@@ -250,9 +250,9 @@
       </div>
     </div>
 
-    <div id="contact" class="content">
-      <form class="contentContact" method="post" action="scripts/contact.php">
-        <div class="frameMulti">
+    <div id="contact" class="content contentContact">
+      <form method="post" action="scripts/contact.php">
+        <div class="frameRowMulti">
           <div class="nameFrame">
             <label for="name">Name</label>
             <input
@@ -321,11 +321,9 @@
       </form>
     </div>
 
-    <div id="location" class="content">
-      <div class="contentMap">
-        <iframe class="map" title="lachenmaierLocation"
-        src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed></iframe>
-      </div>
+    <div id="location" class="contentMap">
+      <iframe class="map" title="lachenmaierLocation"
+      src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed></iframe>
     </div>
 
     <div class="lineBlack"></div>
