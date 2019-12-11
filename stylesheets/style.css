@@ -319,8 +319,7 @@ a {
 }
 
 .textCenteredLeft {
-  justify-content: center;
-  align-items: left;
+  justify-content: left;
 }
 
 .wrap {
