@@ -33,7 +33,7 @@ body {
   background: url(../graphics/background1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  font-size: 20px;
+  font-size: 16px;
   flex-flow: wrap;
 }
 
