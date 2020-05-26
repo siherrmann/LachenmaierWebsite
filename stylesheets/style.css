@@ -4,8 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("☺"),
-    url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPQ.woff2)
-      format("woff2");
+    url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPQ.woff2) format("woff2");
 }
 
 #navbar {
@@ -99,7 +98,6 @@ a {
 }
 
 /* navbar */
-
 .sticky {
   position: sticky;
   top: 0;
@@ -200,6 +198,7 @@ a {
 }
 
 @media all and (max-width: 1300px) {
+
   .linkTo,
   .start {
     width: 14vw;
@@ -209,6 +208,7 @@ a {
 }
 
 @media all and (max-width: 620px) {
+
   .linkTo,
   .start {
     display: none;
@@ -223,7 +223,6 @@ a {
 }
 
 /* header */
-
 .header {
   display: flex;
   height: auto;
@@ -296,6 +295,7 @@ a {
 }
 
 @media all and (max-width: 620px) {
+
   .scrollToContact,
   .scrollToServices {
     width: 100%;
@@ -313,7 +313,6 @@ a {
 }
 
 /* content */
-
 .centered {
   justify-content: center;
 }
@@ -327,7 +326,7 @@ a {
 }
 
 .wrapReverse {
-    flex-flow: row wrap-reverse;
+  flex-flow: row wrap-reverse;
 }
 
 .withBackgroundColor {
@@ -342,12 +341,20 @@ a {
   overflow: hidden;
 }
 
+.contentSiteFrame {
+  display: flex;
+  width: 100%;
+  min-height: 70vh;
+  padding: 50px 17%;
+  overflow: hidden;
+}
+
 .contentContact,
 .contentImprint,
 .contentInfo,
 .contentServices,
 .contentSite,
-.contentJobs {
+.contentTechnologies {
   display: flex;
   overflow: hidden;
   font-family: "Abel", sans-serif;
@@ -365,7 +372,7 @@ a {
 
 .contentInfo,
 .contentServices,
-.contentJobs {
+.contentTechnologies {
   justify-content: center;
 }
 
@@ -495,6 +502,19 @@ a {
   min-height: 200px;
 }
 
+.contentTechnologies {
+  align-items: center;
+  width: 100%;
+}
+
+.contentTechnologies table {
+  text-align: center;
+}
+
+.contentTechnologies table td {
+  padding: 5px 50px;
+}
+
 label {
   margin-left: 10px;
 }
@@ -543,11 +563,8 @@ label {
   height: 360px;
 }
 
-.g-recaptcha {
-  width: 304px;
-  height: 78px;
-  padding: 0px;
-  border: none;
+.pot {
+  display: none;
 }
 
 .submit {
@@ -566,7 +583,6 @@ label {
 
 .contentMap {
   width: 100%;
-  height: 220px;
   overflow: hidden;
 }
 
@@ -592,6 +608,7 @@ label {
 }
 
 @media all and (max-width: 1000px) {
+
   .emailFrame,
   .nameFrame,
   .subjectFrame {
@@ -600,11 +617,16 @@ label {
 }
 
 @media all and (max-width: 880px) {
+
   .contentAboutUs1,
   .contentAboutUs2 {
     width: 100%;
     max-width: 100%;
     text-align: center;
+  }
+
+  .contentTechnologies table td {
+    padding: 0 10px;
   }
 
   .contentContact {
@@ -645,7 +667,6 @@ label {
 }
 
 /* footer */
-
 .footer {
   display: flex;
   width: 100%;

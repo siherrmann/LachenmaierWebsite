@@ -1,404 +1,340 @@
 <!DOCTYPE html>
 <html lang="de">
-  <!-- color scheme: https://coolors.co/9e291c-f7f7ff-154848-f2d0a4-545e75 -->
+<!-- color scheme: https://coolors.co/9e291c-f7f7ff-154848-f2d0a4-545e75 -->
 
-  <head>
-    <title>Lachenmaier Werkzeugbau GmbH</title>
-    <meta name="description" content="lachenmaier werkzeugbau" />
-    <meta
-      name="keywords"
-      content="lachenmaier, werkzeugbau, bietigheim, obere hardt"
-    />
-    <meta name="author" content="Simon Herrmann" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/favicons/safari-pinned-tab.svg"
-      color="#195757"
-    />
-    <link rel="shortcut icon" href="/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#195757" />
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-    <meta name="theme-color" content="#195757" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-    <script type="text/javascript" src="scripts/slide.js" async></script>
-  </head>
+<head>
+  <title>Lachenmaier Werkzeugbau GmbH</title>
+  <meta name="description" content="lachenmaier werkzeugbau" />
+  <meta name="keywords" content="lachenmaier, werkzeugbau, bietigheim, obere hardt" />
+  <meta name="author" content="Simon Herrmann" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#195757" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#195757" />
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+  <meta name="theme-color" content="#195757" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <script type="text/javascript" src="scripts/slide.js" async></script>
+</head>
 
-  <body>
-    <div class="frame sticky" id="navbar">
-      <a class="linkTo button" href="#info" onfocus="this.blur()">Über uns</a>
-      <a class="linkTo button" href="#services" onfocus="this.blur()"
-        >Leistungen</a
-      >
-      <a class="linkTo button" href="#contact" onfocus="this.blur()">Kontakt</a>
-      <a class="linkTo button" href="#location" onfocus="this.blur()"
-        >Anfahrt</a
-      >
-      <a class="start button" href="#start" onfocus="this.blur()">Start</a>
-      <div class="responsiveMenu">
-        <button
-          class="dropMenu button"
-          onclick="dropMenu()"
-          onfocus="this.blur()"
-        >
-          ☰
-        </button>
-        <div id="droppedMenuContent" class="menuContent">
-          <a class="droppedLink button" href="#start" onfocus="this.blur()"
-            >Start</a
-          >
-          <a class="droppedLink button" href="#info" onfocus="this.blur()"
-            >Über uns</a
-          >
-          <a class="droppedLink button" href="#services" onfocus="this.blur()"
-            >Leistungen</a
-          >
-          <a class="droppedLink button" href="#contact" onfocus="this.blur()"
-            >Kontakt</a
-          >
-          <a class="droppedLink button" href="#location" onfocus="this.blur()"
-            >Anfahrt</a
-          >
-        </div>
-      </div>
-      <div class="frameLine"><div class="lineBlack"></div></div>
-    </div>
-
-    <div class="header" id="start">
-      <div class="headerPicture"></div>
-      <div class="headerTextFrame">
-        <h1 class="headerText">Lachenmaier Werkzeugbau GmbH</h1>
-        <div class="headerButton frameRowMulti">
-          <a
-            class="scrollToContact button"
-            href="#contact"
-            onfocus="this.blur()"
-            >Kontakt</a
-          >
-          <a
-            class="scrollToServices button"
-            href="#services"
-            onfocus="this.blur()"
-            >Leistungen</a
-          >
-        </div>
+<body>
+  <div class="frame sticky" id="navbar">
+    <a class="linkTo button" href="#info" onfocus="this.blur()">Über uns</a>
+    <a class="linkTo button" href="#services" onfocus="this.blur()">Leistungen</a>
+    <a class="linkTo button" href="#contact" onfocus="this.blur()">Kontakt</a>
+    <a class="linkTo button" href="#location" onfocus="this.blur()">Anfahrt</a>
+    <a class="start button" href="#start" onfocus="this.blur()">Start</a>
+    <div class="responsiveMenu">
+      <button class="dropMenu button" onclick="dropMenu()" onfocus="this.blur()">
+        ☰
+      </button>
+      <div id="droppedMenuContent" class="menuContent">
+        <a class="droppedLink button" href="#start" onfocus="this.blur()">Start</a>
+        <a class="droppedLink button" href="#info" onfocus="this.blur()">Über uns</a>
+        <a class="droppedLink button" href="#services" onfocus="this.blur()">Leistungen</a>
+        <a class="droppedLink button" href="#contact" onfocus="this.blur()">Kontakt</a>
+        <a class="droppedLink button" href="#location" onfocus="this.blur()">Anfahrt</a>
       </div>
     </div>
+    <div class="frameLine">
+      <div class="lineBlack"></div>
+    </div>
+  </div>
 
-    <div class="content wrap withBackgroundColor textCenteredLeft" id="info">
-      <div class="contentInfo">
-        <h2>Herzlich Willkommen</h2>
-        <p>
-          …auf der Website der Lachenmaier Werkzeugbau GmbH in Bietigheim, Ihrem
-          Spezialisten für die Anfertigung von Spritzguss- und
-          Blechverarbeitungswerkzeugen.
-        </p>
-        <p>
-          Unser hochmotiviertes Team aus drei Konstrukteuren und sechs
-          Werkzeugmachern berät Sie bereits in der Entwicklungsphase und bei
-          Bedarf liefern wir auch Muster- und Prototypenteile. Auf Termintreue
-          und hohe Produktqualität können Sie bei uns zählen!
-        </p>
-        <p>
-          Mittlerweile wird das Unternehmen von der zweiten Generation
-          mitgeführt.
-        </p>
-        <p>
-          Seit der Firmengründung im Jahre 1985 fertigen wir für namhafte Kunden
-          aus den Geschäftsbereichen:
-        </p>
-        <ul>
-          <li>Automobilindustrie</li>
-          <li>Systemlieferanten der Automobilindustrie</li>
-          <li>Elektroindustrie</li>
-          <li>Medizintechnik</li>
-          <li>Freizeit- und Unterhaltungsbranche</li>
-        </ul>
-        <p>
-          Im Mai 2011 wurde unserem Unternehmen die Zertifizierungsurkunde nach
-          DIN –EN ISO 9001:2008 ausgestellt.
-        </p>
+  <div class="header" id="start">
+    <div class="headerPicture"></div>
+    <div class="headerTextFrame">
+      <h1 class="headerText">Lachenmaier Werkzeugbau GmbH</h1>
+      <div class="headerButton frameRowMulti">
+        <a class="scrollToContact button" href="#contact" onfocus="this.blur()">Kontakt</a>
+        <a class="scrollToServices button" href="#services" onfocus="this.blur()">Leistungen</a>
       </div>
     </div>
+  </div>
 
-    <div class="content wrap centered">
-      <div class="contentSlide">
-        <div class="slide picture1">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
+  <div class="content wrap withBackgroundColor textCenteredLeft" id="info">
+    <div class="contentInfo">
+      <h2>Herzlich Willkommen</h2>
+      <p>…auf der Website der Lachenmaier Werkzeugbau GmbH in Bietigheim, Ihrem Spezialisten für die Anfertigung von Spritzguss- und Blechverarbeitungswerkzeugen.</p>
+      <p>Unser qualifiziertes Team, bestehend aus zwei Konstrukteuren und fünf Werkzeugmachern berät Sie bereits in der Entwicklungsphase und bei Bedarf liefern wir auch Muster- und Prototypenteile. Auf Termintreue und hohe Produktqualität können Sie
+        bei uns zählen!</p>
+      <p>Mittlerweile wird das Unternehmen von der zweiten Generation mitgeführt.</p>
+      <p>Seit der Firmengründung im Jahre 1985 fertigen wir für namhafte Kunden aus den Geschäftsbereichen:</p>
+      <ul>
+        <li>Automobilindustrie</li>
+        <li>Systemlieferanten der Automobilindustrie</li>
+        <li>Elektroindustrie</li>
+        <li>Medizintechnik</li>
+        <li>Freizeit- und Unterhaltungsbranche</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content wrap centered">
+    <div class="contentSlide">
+      <div class="slide picture1">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
         </div>
-        <div class="slide picture2">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
-        </div>
-        <div class="slide picture3">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
-        </div>
-        <div class="slide picture4">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
-        </div>
-        <div class="slide picture5">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
-        </div>
-        <div class="slide picture6">
-          <div class="left" onclick="nextPicture(-1)">
-            <div class="textLeftRight">&#10094;</div>
-          </div>
-          <div class="right" onclick="nextPicture(1)">
-            <div class="textLeftRight">&#10095;</div>
-          </div>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
         </div>
       </div>
-      <div class="text">
-        <span class="dotsTransparent dot" onclick="currentPicture(1)"></span>
-        <span class="dotsTransparent dot" onclick="currentPicture(2)"></span>
-        <span class="dotsTransparent dot" onclick="currentPicture(3)"></span>
-        <span class="dotsTransparent dot" onclick="currentPicture(4)"></span>
-        <span class="dotsTransparent dot" onclick="currentPicture(5)"></span>
-        <span class="dotsTransparent dot" onclick="currentPicture(6)"></span>
-      </div>
-    </div>
-
-    <div id="services" class="content wrap withBackgroundColor textCenteredLeft">
-      <div class="contentServices">
-        <h3>Unsere Leistungen</h3>
-        <p>Unser Leistungsspektrum umfasst:</p>
-        <ul>
-          <li>Teileentwicklung (fertigungstechnische Auslegung)</li>
-          <li>Herstellung von Musterteilen</li>
-          <li>
-            Konstruktion und Bau von Prototypen, Vorserien und Serienwerkzeugen
-            zur Herstellung von Kunststoff und Blechteilen (max. Formgröße
-            1000x800)
-          </li>
-          <li>Werkzeugwartung, Reparatur und Änderung</li>
-          <li>Vorrichtungs- und Lehrenbau</li>
-          <li>Dienstleistungen in allen vorhandenen Technologien</li>
-          <li>
-            Konstruktion und Programmierung durchgängig mit CatiaV5 und Cimatron
-            (Datenformate: VDA, IGES ,STEP ,DXF ,DWG ,SAT).
-          </li>
-        </ul>
-        <p>Die dafür zur Verfügung stehenden Technologien:</p>
-        <ul>
-          <li>CNC Fräsen 3/5-Achs (auch Graphit)</li>
-          <li>CNC Senkerodieren</li>
-          <li>CNC Drahterodoeren</li>
-          <li>CNC Drehen</li>
-          <li>Flachschleifen</li>
-          <li>Startlocherodieren</li>
-        </ul>
-        <p>
-          Für genauere Informationen und mögliche Umsetzung Ihres Auftrages
-          dürfen Sie uns gerne kontaktieren.
-        </p>
-      </div>
-    </div>
-
-    <div class="content contentPanorama">
-    </div>
-
-    <div id="jobs" class="content wrap withBackgroundColor textCenteredLeft">
-      <div class="contentJobs">
-        <h3>Stellenangebote</h3>
-        <h4>Ausbildungsstelle Feinwerkmechaniker Fachrichtung Formenbau</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        <h4>Vollzeitstelle Feinwerkmechaniker Geselle/Meister</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-
-    <div id="contact" class="content contentContact centered">
-      <form method="post" action="scripts/contact.php">
-        <div class="frameRowMulti">
-          <div class="nameFrame">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Dein Name"
-              required=""
-              oninvalid="this.setCustomValidity('Gib deinen Namen ein')"
-              onchange="this.setCustomValidity('')"
-              value=""
-            />
-          </div>
-          <div class="emailFrame">
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              placeholder="Deine Email-Adresse"
-              required=""
-              oninvalid="this.setCustomValidity('Gib deine Email-Adresse ein')"
-              onchange="this.setCustomValidity('')"
-              value=""
-            />
-          </div>
-          <div class="subjectFrame">
-            <label for="subject">Betreff</label>
-            <input
-              type="text"
-              id="subject"
-              placeholder="Betreff"
-              required=""
-              oninvalid="this.setCustomValidity('Gib deinen Betreff ein')"
-              onchange="this.setCustomValidity('')"
-              value=""
-            />
-          </div>
+      <div class="slide picture2">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
         </div>
-        <div class="messageFrame">
-          <label for="message">Nachricht</label>
-          <textarea
-            rows="10"
-            cols="30"
-            id="message"
-            placeholder="Deine Nachricht"
-            required=""
-            oninvalid="this.setCustomValidity('Gib deine Nachricht ein')"
-            onchange="this.setCustomValidity('')"
-          ></textarea>
-        </div>
-        <div class="frame">
-          <div
-            class="g-recaptcha"
-            data-sitekey="6LcKjHoUAAAAAEJ4Rpq3dAIeghxt14kewGdvac3C"
-          ></div>
-        </div>
-        <div class="frame">
-          <button
-            class="submit button"
-            type="submit"
-            name="send"
-            onfocus="this.blur()"
-          >
-            Absenden
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <div id="location" class="contentMap">
-      <iframe class="map" title="lachenmaierLocation"
-      src=https://maps.google.de/maps?hl=de&q=Lachenmaier%20%20Obere+Hardt+19%20Bietigheim&z=14&ie=utf8&output=embed></iframe>
-    </div>
-
-    <div class="lineBlack"></div>
-
-    <div class="footer">
-      <div class="footerPartFrame">
-        <img src="graphics/location.svg" alt="Adresse" class="footerPicture" />
-        <div class="footerText">
-          <p>
-            Lachenmaier Werkzeugbau GmbH<br />
-            Obere Hardt 19<br />
-            76467 Bietigheim<br />
-            Mail: info@lachenmaier.org<br />
-            Homepage: www.lachenmaier.org
-          </p>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
         </div>
       </div>
-      <div class="footerPartFrame">
-        <img src="graphics/email.svg" alt="Email" class="footerPicture" />
-        <div class="footerText"><p>Mail: info@lachenmaier.org</p></div>
+      <div class="slide picture3">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
+        </div>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
+        </div>
       </div>
-      <div class="footerPartFrame">
-        <img src="graphics/phone.svg" alt="Telefon" class="footerPicture" />
-        <div class="footerText">
-          <p>
-            Fon 0 72 45 / 91 94 0<br />
-            Mobil 01 72 / 7 23 11 30<br />
-            Fax 0 72 45 / 91 94 15
-          </p>
-
-          <p>
-            DFÜ 0 72 45 / 91 94 16<br />
-            DFÜ 0 72 45 / 91 94 18
-          </p>
+      <div class="slide picture4">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
+        </div>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
+        </div>
+      </div>
+      <div class="slide picture5">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
+        </div>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
+        </div>
+      </div>
+      <div class="slide picture6">
+        <div class="left" onclick="nextPicture(-1)">
+          <div class="textLeftRight">&#10094;</div>
+        </div>
+        <div class="right" onclick="nextPicture(1)">
+          <div class="textLeftRight">&#10095;</div>
         </div>
       </div>
     </div>
+    <div class="text">
+      <span class="dotsTransparent dot" onclick="currentPicture(1)"></span>
+      <span class="dotsTransparent dot" onclick="currentPicture(2)"></span>
+      <span class="dotsTransparent dot" onclick="currentPicture(3)"></span>
+      <span class="dotsTransparent dot" onclick="currentPicture(4)"></span>
+      <span class="dotsTransparent dot" onclick="currentPicture(5)"></span>
+      <span class="dotsTransparent dot" onclick="currentPicture(6)"></span>
+    </div>
+  </div>
 
-    <div class="footerCopyright">
+  <div id="services" class="content wrap withBackgroundColor textCenteredLeft">
+    <div class="contentServices">
+      <h3>Unsere Leistungen</h3>
+      <p>Unser Leistungsspektrum umfasst:</p>
+      <ul>
+        <li>Teileentwicklung (fertigungstechnische Auslegung)</li>
+        <li>Herstellung von Musterteilen</li>
+        <li>Konstruktion und Bau von Prototypen, Vorserien und Serienwerkzeugen zur Herstellung von Kunststoff und Blechteilen (max. Gewicht 3 Tonnen)</li>
+        <li>Werkzeugwartung, Reparatur und Änderung</li>
+        <li>Vorrichtungs- und Lehrenbau</li>
+        <li>Dienstleistungen in allen vorhandenen Technologien (Einzelteil und Serienfertigung)</li>
+        <li>Konstruktion und Programmierung durchgängig mit Visi und Cimatron (Datenformate: Visi direkt, Cimatron direkt, Parasolid, STEP, DXF, DWG, IGES, VDAFS)</li>
+      </ul>
+      <p>Die dafür zur Verfügung stehenden Technologien:</p>
+      <ul>
+        <li>CNC Fräsen 3/5-Achs (auch Graphit)</li>
+        <li>CNC Senkerodieren</li>
+        <li>CNC Drahterodoeren</li>
+        <li>CNC Drehen</li>
+        <li>Flachschleifen</li>
+        <li>Startlocherodieren</li>
+      </ul>
       <p>
-        © Lachenmaier Werkzeugbau GmbH<br />
-        <a href="imprint.html" style="color: white">Impressum</a>
-        <a href="dataProtection.html" style="color: white">Datenschutz</a><br />
-        Made with ♥ by
-        <a
-          href="https://github.com/siherrmann"
-          style="color: white"
-          target="_blank"
-          rel="noopener"
-          >siherrmann</a
-        ><br />
+        Für genauere Informationen und mögliche Umsetzung Ihres Auftrages
+        dürfen Sie uns gerne kontaktieren.
       </p>
     </div>
+  </div>
 
-    <?php $cookie_set = $_COOKIE["setCookieHinweis"]; if ($cookie_set != "set")
-    { ?>
+  <div class="content contentPanorama">
+  </div>
 
-    <div id="cookie-popup">
-      <span class="hinweis"
-        >Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen
-        Sie der Verwendung von Cookies zu.<br
-      /></span>
-      <span class="more-info"
-        ><a href="/dataProtection.html" style="color: white"
-          >Mehr Informationen</a
-        ></span
-      >
-      <button class="cookieButton" onclick="cookieOk()">
-        OK, ich bin einverstanden.
-      </button>
+  <div id="technologies" class="content wrap withBackgroundColor textCenteredLeft">
+    <div class="contentTechnologies">
+      <h3>Technologien</h3>
+      <table>
+        <tr>
+          <td>HSC/Fräsen</td>
+          <td>800x600x500</td>
+          <td>Röders</td>
+        </tr>
+        <tr>
+          <td>CNC/Fräsen</td>
+          <td>1100x1000x700</td>
+          <td>DepoSpeed</td>
+        </tr>
+        <tr>
+          <td>CNC/Fräsen</td>
+          <td>500x250x500</td>
+          <td>Fehlmann</td>
+        </tr>
+        <tr>
+          <td>CNC/Fräsen</td>
+          <td>1100x600x500</td>
+          <td>POS</td>
+        </tr>
+        <tr>
+          <td>Senkerodieren</td>
+          <td>524x400</td>
+          <td>OPS Ingersoll</td>
+        </tr>
+        <tr>
+          <td>Senkerodieren</td>
+          <td>500x350</td>
+          <td>Agie Integral</td>
+        </tr>
+        <tr>
+          <td>Drahterodieren</td>
+          <td>550x400x400</td>
+          <td>Charmilles Robofil 440</td>
+        </tr>
+        <tr>
+          <td>Drahterodieren</td>
+          <td>550x400x400</td>
+          <td>Charmilles Robofil 440 CC</td>
+        </tr>
+        <tr>
+          <td>Startlocherodieren</td>
+          <td>350x250x200</td>
+          <td>Charmilles</td>
+        </tr>
+        <tr>
+          <td>Messen</td>
+          <td>3Achsen 500x500</td>
+          <td>Zeiss Duramax</td>
+        </tr>
+        <tr>
+          <td>Flachschleifen</td>
+          <td>1000x600</td>
+          <td>G+H</td>
+        </tr>
+        <tr>
+          <td>Flachschleifen</td>
+          <td>300x150</td>
+          <td>Haas</td>
+        </tr>
+        <tr>
+          <td>Drehen</td>
+          <td>Ø300 x 900</td>
+          <td>Huron Jyoti</td>
+        </tr>
+        <tr>
+          <td>Drehen</td>
+          <td>Ø250 x 700</td>
+          <td>Weiler</td>
+        </tr>
+      </table>
     </div>
+  </div>
 
-    <?php }; ?>
+  <div id="contact" class="content contentContact centered">
+    <form class="contact" method="post" action="scripts/contact.php">
+      <div class="frameRowMulti justifyContentSpaceBetween">
+        <div class="nameFrame frameColumnMulti">
+          <label for="name">NAME</label>
+          <input type="text" id="name" name="name" placeholder="Dein Name" required="" oninvalid="this.setCustomValidity('Gib einen Namen ein')" onchange="this.setCustomValidity('')" value="" />
+        </div>
+        <div class="emailFrame frameColumnMulti">
+          <label for="email">EMAIL</label>
+          <input type="text" id="email" name="email" placeholder="Deine Email-Adresse" required="" oninvalid="this.setCustomValidity('Gib eine Email-Adresse ein')" onchange="this.setCustomValidity('')" value="" />
+        </div>
+        <div class="subjectFrame frameColumnMulti">
+          <label for="subject">BETREFF</label>
+          <input type="text" id="subject" name="subject" placeholder="Betreff" required="" oninvalid="this.setCustomValidity('Gib einen Betreff ein')" onchange="this.setCustomValidity('')" value="" />
+        </div>
+      </div>
+      <div class="messageFrame frameColumnMulti">
+        <label for="message">NACHRICHT</label>
+        <textarea rows="10" cols="30" id="message" name="message" maxlength="1700" minlength="10" placeholder="Deine Nachricht" required="" oninvalid="this.setCustomValidity('Gib eine Nachricht ein')" onchange="this.setCustomValidity('')"></textarea>
+      </div>
+      <div class="frame pot">
+        <label for="lastname">Bitte nicht ausfüllen!</label>
+        <textarea rows="1" cols="30" id="lastname" name="lastname" maxlength="12" minlength="5" placeholder="nachname"></textarea>
+      </div>
+      <div class="frame">
+        <button class="submit button" type="submit" name="send" onfocus="this.blur()">
+          ABSENDEN
+        </button>
+      </div>
+      <div class="returnMsg" style="display: none" role="alert">
+        Your message was sent successfully.
+      </div>
+    </form>
+  </div>
 
-    <script type="text/javascript" src="scripts/scripts.js" async></script>
-    <script src="https://www.google.com/recaptcha/api.js" defer></script>
-  </body>
+  <div id="location" class="contentMap">
+    <a href="https://www.google.com/maps/place/Lachenmaier+Werkzeugbau+GmbH/@48.8892,8.26847,15z/data=!4m5!3m4!1s0x0:0xcf23d9fd5d5f0476!8m2!3d48.8892!4d8.26847" target="_blank" rel="noopener"><img src="graphics/Map.jpg" alt="Adresse"
+        class="map" /></a>
+  </div>
+
+  <div class="lineBlack"></div>
+
+  <div class="footer">
+    <div class="footerPartFrame">
+      <img src="graphics/location.svg" alt="Adresse" class="footerPicture" />
+      <div class="footerText">
+        <p>
+          Lachenmaier Werkzeugbau GmbH<br />
+          Obere Hardt 19<br />
+          76467 Bietigheim<br />
+          Mail: info@lachenmaier.org<br />
+          Homepage: www.lachenmaier.org
+        </p>
+      </div>
+    </div>
+    <div class="footerPartFrame">
+      <img src="graphics/email.svg" alt="Email" class="footerPicture" />
+      <div class="footerText">
+        <p>Mail: info@lachenmaier.org</p>
+      </div>
+    </div>
+    <div class="footerPartFrame">
+      <img src="graphics/phone.svg" alt="Telefon" class="footerPicture" />
+      <div class="footerText">
+        <p>
+          Fon 0 72 45 / 91 94 0<br />
+          Mobil 01 72 / 7 23 11 30<br />
+          Fax 0 72 45 / 91 94 15
+        </p>
+
+        <p>
+          DFÜ 0 72 45 / 91 94 16<br />
+          DFÜ 0 72 45 / 91 94 18
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerCopyright">
+    <p>
+      © Lachenmaier Werkzeugbau GmbH<br />
+      <a href="imprint.html" style="color: white">Impressum</a>
+      <a href="dataProtection.html" style="color: white">Datenschutz</a><br />
+      Made with ♥ by
+      <a href="https://github.com/siherrmann" style="color: white" target="_blank" rel="noopener">siherrmann</a><br />
+    </p>
+  </div>
+
+  <script type="text/javascript" src="scripts/scripts.js" async></script>
+</body>
+
 </html>
