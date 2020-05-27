@@ -330,7 +330,7 @@ a {
 }
 
 .withBackgroundColor {
-  background: rgb(255,255,255,0.6);
+  background: rgb(255, 255, 255, 0.6);
 }
 
 .content {
@@ -392,7 +392,9 @@ a {
 .picture3,
 .picture4,
 .picture5,
-.picture6 {
+.picture6,
+.picture7,
+.picture8 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -422,6 +424,14 @@ a {
   background-image: url(../graphics/slide6.jpg);
 }
 
+.picture7 {
+  background-image: url(../graphics/slide7.jpg);
+}
+
+.picture8 {
+  background-image: url(../graphics/slide8.jpg);
+}
+
 .left,
 .right {
   display: flex;
@@ -445,8 +455,9 @@ a {
 }
 
 .textLeftRight {
+  font-size: 30px;
   padding: 20px;
-  color: #666;
+  color: #888;
   -moz-user-select: None;
   -ms-user-select: None;
   -webkit-user-select: None;
